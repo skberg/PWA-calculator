@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PWA Work bead</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="manifest" href="/manifest.json" />
+</head>
+<body>
+ 
+
+
+<div class="GRid">
+        <div class="bg">
+          <div class="Shows">
+            <button id="clear" class="clear">C</button>
+            <div id="viewer" class="viewer">0</div>
+
+          </div>
+
+          <div id="calculator" class="calculator">
+            <button class="num" data-num="1">1</button>
+            <button class="num" data-num="2">2</button>
+            <button class="num" data-num="3">3</button>
+
+            <button class="num" data-num="4">4</button>
+            <button class="num" data-num="5">5</button>
+            <button class="num" data-num="6">6</button>
+
+
+            <button class="num" data-num="7">7</button>
+            <button class="num" data-num="8">8</button>
+            <button class="num" data-num="9">9</button>
+            <button class="num" data-num="0">0</button>
+
+          </div>
+          <div class="buttons">
+
+            <button data-ops="plus" class="ops">+</button>
+            <button data-ops="minus" class="ops">-</button>
+            <button data-ops="times" class="ops">*</button>
+            <button class="dot" data-num=".">.</button>
+            <button id="equals" class="equals" data-result="">=</button>
+            <button data-ops="divided by" class="ops">/</button>
+          </div>
+        </div>
+      
+      </div>
+    <script src="./js/Som.js"></script>
+  
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js');
+          });
+        }
+     </script>
+</body>
+</html>

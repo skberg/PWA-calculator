@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:700&display=swap');
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+
+
+
+
+.GRid{
+    display: block;
+    margin: 25px auto;
+    justify-items: center;
+    max-width: 500px;
+}
+
+
+.bg{
+    display: block;
+    margin: auto;
+    background-color: #222222;
+    padding: 15px;
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    margin: auto;
+   
+}
+.Shows{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  
+}
+.clear{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+.viewer{
+    display: block;
+    margin: 6px auto;
+    text-align: right;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+   
+}
+
+.num{
+    margin: 5px;
+    padding: 25px;
+    border-radius: 10px;
+    border: none;
+
+}
+.buttons{
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    
+}
+.clear{
+    display: block;
+    
+    background-color: orange;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    color: #777777;
+    font-size: 30px;
+}
+
+
+.ops{
+    background-color: #519C9F;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+.equals{
+    background-color: #519C9F;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+.dot{
+    background-color: #519C9F;
+    border: none;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    
+}
+.Images{
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: #222222;;
+    }
+  
+    
+    
+    .GRid {
+      grid-template-columns: auto;
+      margin:  auto;
+    
+    }
+
+    .bg{
+        display: block;
+        margin: auto;
+        background-color: #222222;
+        padding: 0px;
+        width: 100%;
+    
+        border-radius: 15px;
+    }
+    .viewer{
+        background-color: white;
+    }
+
+
+
+
+  }
